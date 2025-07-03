@@ -127,6 +127,103 @@ const universities = {
       "Ingeniería en Electromecánica"
     ],
     convocationLink: "https://cetech.sjuanrio.tecnm.mx/convocatoriaAdmision/6462448e1fcfda3330afe6fc5b50d53b"
+  },
+  cuauhtemoc: {
+    name: "Universidad Cuauhtémoc Querétaro",
+    img: "LogosUniversidades/LOGO_UCQ45.png",
+    courses: [
+      "Lic. en Gestión Empresarial",
+      "Lic. en Desarrollo e Innovación Turística",
+      "Lic. en Animación y Diseño de Arte Digital",
+      "Lic. en Arquitectura",
+      "Lic. en Comercio y Logística Internacional",
+      "Lic. en Comunicación",
+      "Lic. en Contaduría e Impuestos",
+      "Lic. en Cultura Física y Entretenimiento Deportivo",
+      "Lic. en Derecho",
+      "Lic. en Diseño Gráfico y Multimedia",
+      "Lic. en Diseño Industrial y de Producto",
+      "Ingeniería Civil",
+      "Ingeniería Desarrollo de Videojuegos",
+      "Ingeniería en Software y Sistemas",
+      "Ing. Industrial en Sistemas de Manufactura y Calidad",
+      "Ing. Logística del Transporte y Cadenas de Suministro",
+      "Lic. en Mercadotecnia y Publicidad",
+      "Lic. en Pedagogía",
+      "Lic. en Nutrición",
+      "Lic. en Psicología Clínica",
+      "Lic. en Fisioterapia",
+      "Lic. en Odontología",
+      "Lic. en Medicina"
+    ],
+    convocationLink: "https://www.ucq.edu.mx/uc/licenciatura"
+  },
+  uniq: {
+    name: "Universidad Internacional de Querétaro",
+    img: "LogosUniversidades/LOGO_UNIQ.png",
+    courses: [
+      "Lic. en Administración de Empresas Turísticas",
+      "Lic. en Administración de Empresas",
+      "Lic. en Derecho",
+      "Lic. en Mercadotecnia",
+      "Lic. en Negocios Internacionales",
+      "Lic. en Pedagogía",
+      "Lic. en Psicología",
+      "Ingeniería en Sistemas Computacionales"
+    ],
+    convocationLink: "https://www.uniq.education/oferta-educativa/"
+  },
+  uvm: {
+    name: "Universidad del Valle de México - Querétaro",
+    img: "LogosUniversidades/LOGO_UVM.png",
+    courses: [
+      "Licenciaturas de Salud",
+      "Licenciaturas en Ciencias Sociales",
+      "Licenciaturas en Diseño, Arte y Arquitectura",
+      "Licenciaturas en Hospitalidad, Turismo y Gastronomía",
+      "Ingenierías",
+      "Licenciaturas en Negocios"
+    ],
+    convocationLink: "https://uvm.mx/admisiones"
+  },
+  uniceq: {
+    name: "Universidad Central de Querétaro",
+    img: "LogosUniversidades/LOGO_UNICEQ.png",
+    courses: [
+      "Lic. En Administración de Empresas", 
+      "Lic. En Comercio Internacional y Aduanas",
+      "Lic. En Contaduría y Finanzas",
+      "Lic. En Criminología",
+      "Lic. En Derecho",
+      "Ingeniería Industrial",
+      "Ingeniería en Innovación y Desarrollo Tecnológico",
+      "Lic. En Mercadotecnia y Publicidad",
+      "Lic. En Pedagogía",
+      "Lic. En Psicología"
+    ],
+    convocationLink: "https://www.unea.edu.mx/iniciamos-clases?utm_content=ejecutiva&utm_source=google&utm_campaign=C2_Generico_UNEA_CNV_GG_TEX_ADS_CPC_AON&utm_medium=cpc&utm_term=donde%20estudiar%20licenciatura&hsa_kw=donde%20estudiar%20licenciatura&hsa_mt=b&hsa_tgt=kwd-3808387545&hsa_src=g&hsa_ad=691524290802&hsa_ver=3&hsa_cam=21036600639&hsa_net=adwords&hsa_acc=7877656689&hsa_grp=162148190874&gad_source=1&gad_campaignid=21036600639&gbraid=0AAAAADcJWR3vnmwgnxJ8Vqfu4605r2sCo&gclid=Cj0KCQjw1JjDBhDjARIsABlM2SsZIQ9lycZi-4MgdcRSCj61TWRb_Q_CAPMlxYsiUlzdeuHHv00Kz0AaAitmEALw_wcB"
+  },
+  cesba: {
+    name: "Centro de Estudios Superiores del Bajío",
+    img: "LogosUniversidades/LOGO_CESBA.png",
+    courses: [
+      "Lic. en Administración de Empresas",
+      "Lic. en Administración",
+      "Lic. en Derecho",
+      "Ingeniería Industrial",
+      "Lic. en Contaduría Pública",
+      "Lic. en Pedagogía",
+      "Lis. En Ingeniería En Sistemas Computacionales",
+      "Lic. En Sistemas Computacionales",
+      "Lic. En Enfermería",
+      "Lic. En Psicología",
+      "Lic. En Nutrición",
+      "Lic. En Mercadotecnia",
+      "Lic. En Fisioterapia",
+      "Lic. En Arquitectura",
+      "Lic. En Comercio Internacional"
+    ],
+    convocationLink: "https://www.cesba-queretaro.edu.mx/admisiones/"
   }
 };
 

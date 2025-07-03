@@ -371,3 +371,46 @@ cards.forEach(card => {
 closeBtn.addEventListener('click', () => {
   detailPanel.style.display = 'none';
 });
+const tooltips = {
+  unaq: "Universidad Aeronáutica en Querétaro",
+  up: "Universidad Politécnica de Santa Rosa Jáuregui",
+  upq: "Universidad Politécnica de Querétaro",
+  utc: "Universidad Tecnológica de Corregidora",
+  uteq: "Universidad Tecnológica de Querétaro",
+  utsjr: "Universidad Tecnológica de San Juan del Río",
+  itq: "Tecnológico Nacional de México Campus Querétaro",
+  tecnm: "Tecnológico Nacional de México Campus SJR",
+  cuauhtemoc: "Universidad Cuauhtémoc",
+  uniq: "Universidad Intercultural de Querétaro",
+  uvm: "Universidad del Valle de México",
+  uniceq: "Universidad Central de Querétaro",
+  cesba: "Centro de Estudios Superiores de Bajío",
+  londres: "Universidad de Londres",
+  uniplea: "Universidad Privada de Estudios Avanzados",
+  dicormo: "Universidad DICORMO",
+  atenas: "Universidad Atenas",
+  cnci: "Universidad CNCI",
+  real: "Universidad Real",
+  new_element: "Universidad New Element"
+};
+
+document.querySelectorAll('.card').forEach(card => {
+  const uniKey = card.dataset.university;
+  card.addEventListener('mouseenter', () => {
+    const tooltipText = tooltips[uniKey];
+    if (tooltipText) {
+      const tooltip = document.createElement('div');
+      tooltip.className = 'custom-tooltip';
+      tooltip.innerText = tooltipText;
+      document.body.appendChild(tooltip);
+
+      const rect = card.getBoundingClientRect();
+      tooltip.style.left = `${rect.left + window.scrollX + 10}px`;
+      tooltip.style.top = `${rect.top + window.scrollY - 30}px`;
+
+      card.addEventListener('mouseleave', () => {
+        tooltip.remove();
+      }, { once: true });
+    }
+  });
+});

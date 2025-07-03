@@ -1,0 +1,237 @@
+/* Estilos generales */
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background-color: #242b57;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px 25px;
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 2rem;
+}
+
+header .logo {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  margin-left: 30px;
+}
+
+header nav {
+  margin-left: auto;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li {
+  margin-right: 50px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.main-title,
+.sub-title {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.main-title {
+  color: #ffffff;
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+
+.sub-title {
+  color: #555;
+  font-size: 1rem;
+  line-height: 0.2;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.instituciones-title {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #242b57;
+  margin-bottom: 30px;
+  font-weight: 500;
+}
+
+/* Tarjetas en una fila con scroll horizontal */
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  padding-bottom: 1rem;
+  gap: 1rem;
+  scroll-behavior: smooth;
+}
+
+.card {
+  min-width: 200px;
+  max-width: 200px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  flex-shrink: 0;
+  background-color: white;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  height: 150px;
+  object-fit: contain;
+  padding: 1rem;
+}
+
+.card-title {
+  font-size: 1rem;
+  color: #242b57;
+  font-weight: bold;
+}
+
+a.text-decoration-none {
+  text-decoration: none !important;
+}
+
+.scroll-container::-webkit-scrollbar {
+  height: 8px;
+}
+.scroll-container::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+/* Panel detalle universidad */
+#university-detail {
+  background: #fff;
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: none;
+}
+
+#university-detail .detail-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+#university-detail img.detail-img {
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  flex-shrink: 0;
+}
+
+#university-detail .detail-courses {
+  flex-grow: 1;
+  min-width: 250px;
+}
+
+#university-detail .detail-courses ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+/*#university-detail .detail-courses ul li {
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+#university-detail .btn-close-detail {
+  margin-top: 20px;
+}*/
+#university-detail {
+  position: relative; /* Necesario para posicionar elementos internos */
+}
+
+#university-detail .btn-close-detail {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  #university-detail .detail-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #university-detail img.detail-img {
+    width: 100%;
+    height: auto;
+  }
+
+  #university-detail .detail-courses {
+    min-width: 100%;
+  }
+}
+
+/* Responsive */
+@media (max-width: 424px) {
+  header .logo {
+    margin: 0 auto;
+    max-width: 200px;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header nav ul li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .main-title,
+  .sub-title {
+    font-size: 1.2rem;
+    margin: 10px 15px;
+  }
+
+  .sub-title {
+    font-size: 0.9rem;
+  }
+
+  .card {
+    min-width: 160px;
+    max-width: 160px;
+  }
+
+  .card img {
+    height: 120px;
+  }
+}

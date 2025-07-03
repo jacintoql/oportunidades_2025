@@ -10,7 +10,7 @@ body {
 header {
   background-color: #242b57;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 20px 25px;
+  padding: 10px 15px;
   display: flex !important;
   align-items: center;
   justify-content: space-between;
@@ -119,6 +119,27 @@ a.text-decoration-none {
   background: #ccc;
   border-radius: 4px;
 }
+
+.custom-tooltip {
+  position: absolute;
+  background-color: #343a40;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 14px;
+  z-index: 1000;
+  pointer-events: none;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+}
+
+/* Pie de Página*/
+footer {
+  background-color: #242b57;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: white;
+  padding: 1.5rem 0;
+}
+
 /* Panel detalle universidad */
 #university-detail {
   background: #fff;
